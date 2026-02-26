@@ -64,6 +64,7 @@ ValueError: The checkpoint you are trying to load has model type `glm_moe_dsa` b
 You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
 
 ```
+</details>
 
 #### Resolution : 
 ```
@@ -149,6 +150,7 @@ ValueError: The checkpoint you are trying to load has model type `glm_moe_dsa` b
 You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
 
 ```
+</details>
 
 #### Resolution : 
 ```
@@ -167,11 +169,6 @@ python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/
 ```
 ```
 
-<details>
-<summary>Click to view Bash script</summary>
-
-```bash
-#!/bin/bash
 echo "Hello, World!"
 for i in {1..5}; do
     echo "Iteration $i"
