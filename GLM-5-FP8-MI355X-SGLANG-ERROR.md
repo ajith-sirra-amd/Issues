@@ -1,5 +1,14 @@
 # Model : zai-org/GLM-5-FP8
 
+## Here what I tried : 
+
+- Rocm SGLang Docker (20260218) with Default Transformer
+- Rocm SGLang Docker (20260218) with Updated Transformer
+- Rocm SGLang Docker (20260225) with Default Transformer
+- Rocm SGLang Docker (20260225) with Updated Transformer
+- Rocm LMSYS Docker with Updated Transformer without any code changes
+- Rocm LMSYS Docker with Updated Transformer with code changes 
+- 
 ### Trail 1 : 
 
 #### Docker Image : rocm/sgl-dev:v0.5.8.post1-rocm720-mi35x-20260218
