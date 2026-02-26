@@ -1215,21 +1215,21 @@ You can update Transformers with the command `pip install --upgrade transformers
 ```
 </details>
 
-#### Resolution : 
+##### Resolution : 
 ```
 pip install git+https://github.com/huggingface/transformers.git
 ```
-#### Output : 
+##### Output : 
 ```
 Successfully installed huggingface-hub-1.4.1 markdown-it-py-4.0.0 mdurl-0.1.2 rich-14.3.3 shellingham-1.5.4 transformers-5.3.0.dev0 typer-0.24.1 typer-slim-0.24.0
 ```
-#### Transformers : 5.3.0.dev0
-#### Command : 
+##### Transformers : 5.3.0.dev0
+##### Command : 
 ```
 python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/GLM-5-FP8 --tp-size 8 --kv-cache-dtype fp8_e4m3
 ```
 
-#### Error Log : 
+##### Error Log : 
 
 <details>
 <summary>Click to view Error Log</summary>
@@ -2172,11 +2172,11 @@ TypeError: cannot unpack non-iterable ForwardMetadata object
 ---
 ### Trail 3 : 
 
-#### Docker Image : lmsysorg/sglang:v0.5.8-rocm700-mi35x
+##### Docker Image : lmsysorg/sglang:v0.5.8-rocm700-mi35x
 
-#### Transformers : 4.57.1 
-#### Resolution : Updated Trannformers ```pip install git+https://github.com/huggingface/transformers.git```
-#### Output : 
+##### Transformers : 4.57.1 
+##### Resolution : Updated Trannformers ```pip install git+https://github.com/huggingface/transformers.git```
+##### Output : 
 ```bash
       Successfully uninstalled typer-0.16.1
   Attempting uninstall: huggingface-hub
@@ -2196,15 +2196,15 @@ Successfully installed annotated-doc-0.0.4 hf-xet-1.3.1 huggingface-hub-1.4.1 tr
 [notice] A new release of pip is available: 25.3 -> 26.0.1
 [notice] To update, run: pip install --upgrade pip
 ```
-#### Transformers : 5.3.0.dev0
+##### Transformers : 5.3.0.dev0
 
-#### Command : 
+##### Command : 
 ```
 SGLANG_USE_AITER=0
 python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/GLM-5-FP8 --tp-size 8 --kv-cache-dtype fp8_e4m3
 ```
 
-#### Error Log : 
+##### Error Log : 
 
 <details>
 <summary>Click to view Error Log</summary>
@@ -2232,20 +2232,20 @@ TypeError: AutoImageProcessor.register() got multiple values for argument 'exist
 ```
 </details>
 
-#### Resolution : 
+##### Resolution : 
 ```
 vi /sgl-workspace/sglang/python/sglang/srt/configs/utils.py +18
 
 - AutoImageProcessor.register(config, None, image_processor, None, exist_ok=True) #Before
 + AutoImageProcessor.register(config, image_processor, None, exist_ok=True)       #After 
 ```
-#### Command : 
+##### Command : 
 ```
 SGLANG_USE_AITER=0
 python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/GLM-5-FP8 --tp-size 8 --kv-cache-dtype fp8_e4m3
 ```
 
-#### Error Log : 
+##### Error Log : 
 
 <details>
 <summary>Click to view Error Log</summary>
