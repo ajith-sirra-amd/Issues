@@ -10,6 +10,7 @@ python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/
 
 #### Error Log : 
 <details>
+  <summary>Click to view Error Log : </summary>
 ```
 [aiter] import [module_aiter_enum] under /sgl-workspace/aiter/aiter/jit/module_aiter_enum.so
 [2026-02-26 04:55:25] INFO core.py:501: import [module_aiter_enum] under /sgl-workspace/aiter/aiter/jit/module_aiter_enum.so
@@ -59,4 +60,3 @@ ValueError: The checkpoint you are trying to load has model type `glm_moe_dsa` b
 You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
 
 ```
-</details>
