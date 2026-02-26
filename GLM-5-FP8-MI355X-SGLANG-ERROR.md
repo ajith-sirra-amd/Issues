@@ -9,9 +9,7 @@ python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/
 ```
 
 #### Error Log : 
-<details>
-  <summary>Click to view Error Log : </summary>
-</details>
+
 ```
 [aiter] import [module_aiter_enum] under /sgl-workspace/aiter/aiter/jit/module_aiter_enum.so
 [2026-02-26 04:55:25] INFO core.py:501: import [module_aiter_enum] under /sgl-workspace/aiter/aiter/jit/module_aiter_enum.so
