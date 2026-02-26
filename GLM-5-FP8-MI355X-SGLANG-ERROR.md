@@ -1133,7 +1133,7 @@ TypeError: cannot unpack non-iterable ForwardMetadata object
 
 [2026-02-26 05:35:13] Received sigquit from a child process. It usually means the child failed.
 ```
-
+</details>
 
 ### Trail 2 : 
 
@@ -1215,4 +1215,11 @@ Successfully installed huggingface-hub-1.4.1 markdown-it-py-4.0.0 mdurl-0.1.2 ri
 python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/GLM-5-FP8 --tp-size 8 --kv-cache-dtype fp8_e4m3
 ```
 
+#### Error Log : 
 
+<details>
+<summary>Click to view Error Log</summary>
+  
+```bash
+```
+</details>
