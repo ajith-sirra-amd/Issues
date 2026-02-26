@@ -1135,6 +1135,8 @@ TypeError: cannot unpack non-iterable ForwardMetadata object
 ```
 </details>
 
+---
+
 ### Trail 2 : 
 
 #### Docker Image : rocm/sgl-dev:v0.5.9-rocm720-mi35x-20260225
@@ -1212,6 +1214,31 @@ Successfully installed huggingface-hub-1.4.1 markdown-it-py-4.0.0 mdurl-0.1.2 ri
 ```
 #### Command : 
 ```
+python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/GLM-5-FP8 --tp-size 8 --kv-cache-dtype fp8_e4m3
+```
+
+#### Error Log : 
+
+<details>
+<summary>Click to view Error Log</summary>
+  
+```bash
+
+```
+</details>
+
+---
+### Trail 3 : 
+
+#### Docker Image : lmsysorg/sglang:v0.5.8-rocm700-mi35x
+
+#### Transformers : 4.57.1 
+#### Resolution : Updated Trannformers ```pip install git+https://github.com/huggingface/transformers.git```
+#### Transformers : 4.57.1 
+
+#### Command : 
+```
+SGLANG_USE_AITER=0
 python3 -m sglang.launch_server --attention-backend triton --model-path zai-org/GLM-5-FP8 --tp-size 8 --kv-cache-dtype fp8_e4m3
 ```
 
